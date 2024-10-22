@@ -1,8 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'My Landing Page',
-  description: 'Welcome to my landing page!',
+  title: 'Gobind Bakhshi',
+  description: 'welcome home',
 };
 
 export default function RootLayout({
