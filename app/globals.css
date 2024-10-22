@@ -3,14 +3,14 @@
 /* globals.css */
 
 .bg-image {
-  background-image: url('/ama-dablam-mountain-climb-0155-2-J9KiT6Lei-transformed.jpeg'); /* Use your image path */
-  background-size: cover; /* Ensure the image covers the full area */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Avoid repeating the image */
-  background-attachment: fixed; /* Fixes the image so it doesn’t scroll */
-  height: 100vh; /* Set height to 100% of the viewport */
-  width: 100%; /* Full width of the viewport */
-  overflow: hidden; /* Ensure no overflow occurs */
+  background-image: url('/ama-dablam-mountain-climb-0155-2-J9KiT6Lei-transformed.jpeg'); 
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: 50% 50%; /* You can adjust the percentages for fine-tuned positioning */
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-attachment: fixed; /* Keeps the background fixed during scroll */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  overflow: hidden; /* Prevents overflow */
 }
 
 /* Centering the text vertically and horizontally using Flexbox */
@@ -28,4 +28,16 @@
   font-size: 300px;
   font-weight: 400;
   line-height: normal;
+}
+
+@media (max-width: 768px) {
+  /* For mobile screens */
+  .container {
+    justify-content: center; /* Center the text horizontally on mobile */
+    padding-left: 0; /* Remove the left padding */
+  }
+  
+  .title-text {
+    font-size: 300px; /* Adjust font size for mobile */
+  }
 }
