@@ -22,12 +22,27 @@
   position: relative;
   padding-left: 35%; /* Create a 10% offset from the left */
 }
+
+@keyframes slowPulse {
+  0%, 100% {
+    text-shadow: 
+      2px 2px 4px rgba(0, 0, 0, 0.5), /* Base shadow */
+      0px 0px 10px rgba(171, 128, 28, 0.4); /* Slight glow */
+  }
+  50% {
+    text-shadow: 
+      4px 4px 10px rgba(0, 0, 0, 0.7), /* Larger shadow for 'pop' */
+      0px 0px 15px rgba(171, 128, 28, 0.6); /* Glow intensifies slightly */
+  }
+}
+
 .title-text {
   color: #AB801C;
   font-family: 'Jolly Lodger', cursive;
   font-size: 300px;
   font-weight: 400;
   line-height: normal;
+  animation: slowPulse 4s infinite ease-in-out; /* 4s for a slow, calm pulse */
 }
 
 @media (max-width: 768px) {

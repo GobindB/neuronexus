@@ -1,3 +1,4 @@
+import NavMenu from './components/desktop-nav/NavMenu';
 import './globals.css';
 
 export const metadata = {
@@ -13,6 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-image">
+        <NavMenu />
         {children}
       </body>
     </html>

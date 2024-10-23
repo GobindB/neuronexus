@@ -1,0 +1,36 @@
+/* NavMenu.module.css */
+
+.nav-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-family: 'Josefin Slab', serif;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.5), /* Shadow */
+    0px 0px 10px rgba(171, 128, 28, 0.5); /* Subtle glow in text color */
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin-bottom: 10px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #AB801C;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #666;
+}
+
+
