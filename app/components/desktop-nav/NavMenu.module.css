@@ -5,6 +5,7 @@
   top: 20px;
   right: 20px;
   font-family: 'Josefin Slab', serif;
+  z-index: 10;
   text-shadow: 
     2px 2px 4px rgba(0, 0, 0, 0.5), /* Shadow */
     0px 0px 10px rgba(171, 128, 28, 0.5); /* Subtle glow in text color */
