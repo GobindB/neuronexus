@@ -1,0 +1,10 @@
+.bg-image {
+    background-image: url('/126029.jpg'); 
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: 50% 50%; /* You can adjust the percentages for fine-tuned positioning */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-attachment: fixed; /* Keeps the background fixed during scroll */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    overflow: hidden; /* Prevents overflow */
+  }

@@ -1,4 +1,5 @@
 import { Josefin_Slab } from 'next/font/google';
+import Link from 'next/link';
 import styles from './NavMenu.module.css';
 
 // Initialize the Google Font (Josefin Slab)
@@ -9,12 +10,28 @@ const josefinSlab = Josefin_Slab({
 
 export default function NavMenu() {
   return (
-    <nav className={`${styles['nav-menu']} ${josefinSlab.className}`}>
+    <nav className={`${styles['nav-menu']} ${josefinSlab.className}`} role="navigation" aria-label="Main Navigation">
       <ul>
-        <li><a href="#mission">mission</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#photos">photos</a></li>
-        <li><a href="#musings">musings</a></li>
+        <li>
+          <Link href="/mission" scroll={false}>
+            mission
+          </Link>
+        </li>
+        <li>
+          <Link href="#projects" scroll={false}>
+            projects
+          </Link>
+        </li>
+        <li>
+          <Link href="#photos" scroll={false}>
+            photos
+          </Link>
+        </li>
+        <li>
+          <Link href="#musings" scroll={false}>
+            musings
+          </Link>
+        </li>
       </ul>
     </nav>
   );

@@ -1,16 +1,11 @@
 /* globals.css */
 
 /* globals.css */
-
-.bg-image {
-  background-image: url('/2660996.jpg'); 
-  background-size: cover; /* Ensures the image covers the container */
-  background-position: 50% 50%; /* You can adjust the percentages for fine-tuned positioning */
-  background-repeat: no-repeat; /* Prevent repeating */
-  background-attachment: fixed; /* Keeps the background fixed during scroll */
-  height: 100vh; /* Full viewport height */
-  width: 100vw; /* Full viewport width */
-  overflow: hidden; /* Prevents overflow */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 /* Centering the text vertically and horizontally using Flexbox */
