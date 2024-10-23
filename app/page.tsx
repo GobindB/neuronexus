@@ -12,22 +12,25 @@ const jollyLodger = Jolly_Lodger({
 
 export default function Home() {
 
-  const audioRef = useRef(null); // Reference to the audio element
+  const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isMuted, setIsMuted] = useState(false); // Audio is not muted by default
 
   // Play audio on component mount
   useEffect(() => {
-    audioRef.current.play().catch(error => {
-      console.log("Autoplay prevented by browser. Play manually.");
-    });
+    if (audioRef.current) { // Ensure audioRef.current is not null
+      audioRef.current.play().catch((error) => {
+        console.log("Autoplay prevented by browser. Play manually.");
+      });
+    }
   }, []);
 
   // Toggle mute/unmute function
   const toggleMute = () => {
-    audioRef.current.muted = !audioRef.current.muted;
-    setIsMuted(!isMuted);
+    if (audioRef.current) { // Ensure audioRef.current is not null
+      audioRef.current.muted = !audioRef.current.muted;
+      setIsMuted(!isMuted); // Update the mute state
+    }
   };
-
     
   return (
     <div className={`${styles['bg-image']}`}>
